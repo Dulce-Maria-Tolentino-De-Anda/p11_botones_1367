@@ -1,41 +1,164 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MisIconosApp());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+class MisIconosApp extends StatelessWidget {
+  const MisIconosApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Dulce Tolentino 1367"),
+          titleTextStyle: TextStyle(color: Color(0xffad7fd2), fontSize: 30),
+          centerTitle: true,
+          backgroundColor: Color(0xffffd4e3),
+        ),
+        body: Column(
+          children: <Widget>[
+            SizedBox(height: 100),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Approve',
+                        style: TextStyle(color: Colors.white, fontSize: 14),
+                      ),
+                      SizedBox(width: 4),
+                      Icon(Icons.thumb_up,
+                          color: Colors.white, size: 18), // Icono like
+                    ],
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.orange,
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                    minimumSize: Size(0, 0),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+                SizedBox(width: 6),
+                ElevatedButton(
+                  onPressed: () {},
+                  child:
+                      Icon(Icons.add, color: Colors.white, size: 18), // Icono +
+                  style: ElevatedButton.styleFrom(
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(14),
+                    backgroundColor: Colors.orange,
+                    minimumSize: Size(0, 0),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+                SizedBox(width: 6),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Approve',
+                        style: TextStyle(color: Colors.white, fontSize: 14),
+                      ),
+                      SizedBox(width: 4),
+                      Icon(Icons.thumb_up,
+                          color: Colors.white, size: 18), // Icono like
+                    ],
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.red,
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                    minimumSize: Size(0, 0),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+                SizedBox(width: 6),
+                ElevatedButton(
+                  onPressed: () {},
+                  child:
+                      Icon(Icons.add, color: Colors.white, size: 18), // Icono +
+                  style: ElevatedButton.styleFrom(
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(14),
+                    backgroundColor: Colors.red,
+                    minimumSize: Size(0, 0),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 12),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Approve',
+                    style: TextStyle(color: Colors.white, fontSize: 14),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.orange,
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                    minimumSize: Size(0, 0),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+                SizedBox(width: 6),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Add',
+                    style: TextStyle(color: Colors.white, fontSize: 14),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(14),
+                    backgroundColor: Colors.orange,
+                    minimumSize: Size(0, 0),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+                SizedBox(width: 6),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Approve',
+                    style: TextStyle(color: Colors.white, fontSize: 14),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.red,
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                    minimumSize: Size(0, 0),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+                SizedBox(width: 6),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Add',
+                    style: TextStyle(color: Colors.white, fontSize: 14),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(14),
+                    backgroundColor: Colors.red,
+                    minimumSize: Size(0, 0),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
